@@ -1,0 +1,207 @@
+version: "3.4"
+
+services:
+    rasa-core-aadhar-tamil:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8858:8858"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_tamil.yml
+         - --port
+         - "8858"
+         - -vv
+   #  rasa-core-aadhar-tamil2:
+   #    image: "tatisudheer/chatbot"
+   #    volumes:
+   #       - ./models:/app/models
+   #       - ./constants:/app/constants
+   #    ports:
+   #       - "8817:8817"
+   #    network_mode: "host"
+   #    command:
+   #       - -m
+   #       - rasa
+   #       - run
+   #       - --enable-api
+   #       - -m
+   #       - models/emi_english/emi_english_core.tar.gz
+   #       - --endpoints
+   #       - constants/emi_english/endpoints_core_tamil.yml
+   #       - --port
+   #       - "8817"
+   #       - -vv
+
+
+    rasa-actions-aadhar-tamil:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5750:5750"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5750"
+         - -vv
+   #  rasa-actions-aadhar-tamil2:
+   #    image: "tatisudheer/chatbot"
+   #    environment:
+   #      - PYTHONUNBUFFERED=1
+   #    volumes:
+   #       - ./models:/app/models
+   #       - ./constants:/app/constants
+   #       - ./actions:/app/actions
+   #       - ./call_logs.csv:/app/call_logs.csv
+   #       - ./customer_details.json:/app/customer_details.json
+   #       - ./customer_details_new.csv:/app/customer_details_new.csv
+   #       - ./handle_bulk_data.py:/app/handle_bulk_data.py
+   #    ports:
+   #       - "5817:5817"
+   #    network_mode: "host"
+   #    command:
+   #       - -m
+   #       - rasa
+   #       - run
+   #       - actions
+   #       - --actions
+   #       - actions.actions
+   #       - --port
+   #       - "5817"
+   #       - -vv
+   #  rasa-actions-aadhar-tamil3:
+   #    image: "tatisudheer/chatbot"
+   #    environment:
+   #      - PYTHONUNBUFFERED=1
+   #    volumes:
+   #       - ./models:/app/models
+   #       - ./constants:/app/constants
+   #       - ./actions:/app/actions
+   #       - ./call_logs.csv:/app/call_logs.csv
+   #       - ./customer_details.json:/app/customer_details.json
+   #       - ./customer_details_new.csv:/app/customer_details_new.csv
+   #       - ./handle_bulk_data.py:/app/handle_bulk_data.py
+   #    ports:
+   #       - "5818:5818"
+   #    network_mode: "host"
+   #    command:
+   #       - -m
+   #       - rasa
+   #       - run
+   #       - actions
+   #       - --actions
+   #       - actions.actions
+   #       - --port
+   #       - "5818"
+   #       - -vv
+   #  rasa-actions-aadhar-tamil4:
+   #    image: "tatisudheer/chatbot"
+   #    environment:
+   #      - PYTHONUNBUFFERED=1
+   #    volumes:
+   #       - ./models:/app/models
+   #       - ./constants:/app/constants
+   #       - ./actions:/app/actions
+   #       - ./call_logs.csv:/app/call_logs.csv
+   #       - ./customer_details.json:/app/customer_details.json
+   #       - ./customer_details_new.csv:/app/customer_details_new.csv
+   #       - ./handle_bulk_data.py:/app/handle_bulk_data.py
+   #    ports:
+   #       - "5819:5819"
+   #    network_mode: "host"
+   #    command:
+   #       - -m
+   #       - rasa
+   #       - run
+   #       - actions
+   #       - --actions
+   #       - actions.actions
+   #       - --port
+   #       - "5819"
+   #       - -vv
+   #  rasa-actions-aadhar-tamil5:
+   #    image: "tatisudheer/chatbot"
+   #    environment:
+   #      - PYTHONUNBUFFERED=1
+   #    volumes:
+   #       - ./models:/app/models
+   #       - ./constants:/app/constants
+   #       - ./actions:/app/actions
+   #       - ./call_logs.csv:/app/call_logs.csv
+   #       - ./customer_details.json:/app/customer_details.json
+   #       - ./customer_details_new.csv:/app/customer_details_new.csv
+   #       - ./handle_bulk_data.py:/app/handle_bulk_data.py
+   #    ports:
+   #       - "5820:5820"
+   #    network_mode: "host"
+   #    command:
+   #       - -m
+   #       - rasa
+   #       - run
+   #       - actions
+   #       - --actions
+   #       - actions.actions
+   #       - --port
+   #       - "5820"
+   #       - -vv
+
+    app_server-aadhar-tamil:
+      image: "tatisudheer/chatbot"
+      volumes:
+        - ./nlu:/app/nlu
+      ports:
+        - "12450:12450"
+      network_mode: "host"
+      command:
+        - nlu/emi_english/app_tamil.py
+
+    nlg_server-aadhar-tamil:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+      - ./nlg:/app/nlg
+      - ./Sheet1.json:/app/Sheet1.json
+      - ./Common.json:/app/Common.json
+      ports:
+      - "13982:13982"
+      network_mode: "host"
+      command:
+      - nlg/emi_english/nlg_server_tamil.py
+
+    Orchestrator-aadhar-tamil:
+      image: "tatisudheer/chatbot"
+      volumes:
+      - ./Orchestrator/CZ:/app/Orchestrator/CZ
+      - ./customer_details.json:/app/customer_details.json
+      - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+      - "8002:8002"
+      network_mode: "host"
+      command:
+      - Orchestrator/CZ/orchestrator_tamil.py
+

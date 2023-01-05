@@ -1,0 +1,21 @@
+action_endpoint:
+    # url: http://20.127.208.146/action_hindi_1/webhook
+    url: http://localhost:5550/webhook
+    # url: http://adhar.saarthi.ai/aadhar_hindi_action/webhook
+nlu:
+    url: http://localhost:12250
+nlg:
+    url: http://localhost:13350/nlg
+tracker_store:
+    db: 5
+    password: 9CcVSjiGPD
+    type: redis
+    url: my-release-redis-master.default.svc.cluster.local
+    record_exp: 300
+
+# event_broker:
+#   type: pika
+#   url: localhost
+#   username: saarthi
+#   password: analytics
+#   queue: kreditbee-hindi-events-queue

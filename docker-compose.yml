@@ -1,0 +1,124 @@
+version: "3.4"
+
+services:
+    rasa-core:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8134:8134"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core.yml
+         - --port
+         - "8134"
+         - -vv
+
+
+    rasa-actions:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+      ports:
+         - "5134:5134"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5134"
+         - -vv
+
+    app_server:
+      image: "tatisudheer/chatbot"
+      volumes:
+        - ./nlu:/app/nlu
+      ports:
+        - "12134:12134"
+      network_mode: "host"
+      command:
+        - nlu/emi_english/app.py
+
+    nlg_server:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+      - ./nlg:/app/nlg
+      - ./bot_responses.json:/app/bot_responses.json
+      ports:
+      - "13134:13134"
+      network_mode: "host"
+      command:
+      - nlg/emi_english/nlg_server.py
+
+    Orchestrator:
+      image: "tatisudheer/chatbot"
+      volumes:
+      - ./Orchestrator/CZ:/app/Orchestrator/CZ
+      ports:
+      - "7134:7134"
+      network_mode: "host"
+      command:
+      - Orchestrator/CZ/orchestrator.py
+
+#    rasa-nlu:
+#      image: "tatisudheer/chatbot"
+#      volumes:
+#         - ./models:/app/models
+#         - ./constants:/app/constants
+#      ports:
+#         - "9134:9134"
+#      network_mode: "host"
+#      command:
+#         - -m
+#         - rasa
+#         - run
+#         - --enable-api
+#         - -m
+#         - models/emi_english/emi_english_nlu.tar.gz
+#         - --endpoints
+#         - constants/emi_english/endpoints_nlu.yml
+#         - --port
+#         - "9134"
+#         - -vv
+
+# #
+# #  redis:
+# #    image: "redis:alpine"
+# #    command: redis-server --requirepass sam@1234
+# #    network_mode: "host"
+# #    ports:
+# #      - "6378:6378"
+# #
+# #  ecom:
+# #    build: .
+# #    container_name: ecom_chatbot
+# #    network_mode: "host"
+# #    ports:
+# #      - "13008:13008"
+# #      - "12008:12008"
+# #      - "7009:7009"
+# #    depends_on:
+# #      - redis
+
+
+

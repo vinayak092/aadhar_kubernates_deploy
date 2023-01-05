@@ -1,0 +1,519 @@
+version: "3.4"
+
+services:
+    rasa-core-kreditbee-kannada:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8036:8036"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8036"
+         - -vv
+    
+    rasa-core-kreditbee-kannada_1:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8037:8037"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8037"
+         - -vv
+
+    rasa-core-kreditbee-kannada_2:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8038:8038"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8038"
+         - -vv
+
+    rasa-core-kreditbee-kannada_3:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8039:8039"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8039"
+         - -vv
+
+    rasa-core-kreditbee-kannada_4:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8035:8035"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8035"
+         - -vv
+
+    rasa-core-kreditbee-kannada_5:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8034:8034"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8034"
+         - -vv
+
+    rasa-core-kreditbee-kannada_6:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8033:8033"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8033"
+         - -vv
+
+
+    rasa-core-kreditbee-kannada_7:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8032:8032"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8032"
+         - -vv
+
+
+    rasa-core-kreditbee-kannada_8:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8031:8031"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8031"
+         - -vv
+
+
+    rasa-core-kreditbee-kannada_9:
+      image: "tatisudheer/chatbot"
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+      ports:
+         - "8030:8030"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - --enable-api
+         - -m
+         - models/emi_english/emi_english_core.tar.gz
+         - --endpoints
+         - constants/emi_english/endpoints_core_kannada.yml
+         - --port
+         - "8030"
+         - -vv
+
+    rasa-actions-kreditbee-kannada:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5036:5036"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5036"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_1:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5037:5037"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5037"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_2:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5038:5038"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5038"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_3:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5039:5039"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5039"
+         - -vv
+
+
+
+    rasa-actions-kreditbee-kannada_4:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5035:5035"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5035"
+         - -vv
+
+    rasa-actions-kreditbee-kannada_5:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5034:5034"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5034"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_6:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5033:5033"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5033"
+         - -vv
+
+    rasa-actions-kreditbee-kannada_7:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5032:5032"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5032"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_8:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5031:5031"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5031"
+         - -vv
+
+
+    rasa-actions-kreditbee-kannada_9:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+         - ./models:/app/models
+         - ./constants:/app/constants
+         - ./actions:/app/actions
+         - ./call_logs.csv:/app/call_logs.csv
+         - ./customer_details.json:/app/customer_details.json
+         - ./customer_details_new.csv:/app/customer_details_new.csv
+         - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+         - "5030:5030"
+      network_mode: "host"
+      command:
+         - -m
+         - rasa
+         - run
+         - actions
+         - --actions
+         - actions.actions
+         - --port
+         - "5030"
+         - -vv
+
+    app_server-kreditbee-kannada:
+      image: "tatisudheer/chatbot"
+      volumes:
+        - ./nlu:/app/nlu
+      ports:
+        - "12676:12676"
+      network_mode: "host"
+      command:
+        - nlu/emi_english/app_kannada.py
+
+    nlg_server-kreditbee-kannada:
+      image: "tatisudheer/chatbot"
+      environment:
+        - PYTHONUNBUFFERED=1
+      volumes:
+      - ./nlg:/app/nlg
+      - ./Sheet1.json:/app/Sheet1.json
+      ports:
+      - "13166:13166"
+      network_mode: "host"
+      command:
+      - nlg/emi_english/nlg_server_kannada.py
+
+    Orchestrator-kreditbee-kannada:
+      image: "tatisudheer/chatbot"
+      volumes:
+      - ./Orchestrator/CZ:/app/Orchestrator/CZ
+      - ./customer_details.json:/app/customer_details.json
+      - ./handle_bulk_data.py:/app/handle_bulk_data.py
+      ports:
+      - "7116:7116"
+      network_mode: "host"
+      command:
+      - Orchestrator/CZ/orchestrator_kannada.py
+

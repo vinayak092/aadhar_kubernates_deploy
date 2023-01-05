@@ -1,0 +1,22 @@
+action_endpoint:
+    # url: http://20.127.208.146/action_english/webhook
+    url: http://localhost:5650/webhook
+    # url: http://adhar.saarthi.ai/aadhar_english_action/webhook
+nlu:
+    url: http://localhost:12350
+nlg:
+    url: http://localhost:13450/nlg
+#    type: nlg.emi_english.customNLGGenerator.CustomNLGGenerator
+tracker_store:
+    db: 5
+    password: 9CcVSjiGPD
+    type: redis
+    url: my-release-redis-master.default.svc.cluster.local
+    record_exp: 300
+
+# event_broker:
+#   type: pika
+#   url: localhost
+#   username: saarthi
+#   password: analytics
+#   queue: Aadhar-english-events-queue

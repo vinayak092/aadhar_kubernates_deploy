@@ -1,0 +1,20 @@
+action_endpoint:
+    # url: http://localhost:5617/webhook
+    url: http://20.127.208.146/action_telugu/webhook
+nlu:
+    url: http://localhost:12217
+nlg:
+    url: http://localhost:13317/nlg
+tracker_store:
+    db: 5
+    password: sam@1234
+    type: redis
+    url: localhost
+    record_exp: 300
+
+# event_broker:
+#   type: pika
+#   url: localhost
+#   username: saarthi
+#   password: analytics
+#   queue: kreditbee-telugu-events-queue

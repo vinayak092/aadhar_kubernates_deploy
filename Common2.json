@@ -1,0 +1,332 @@
+[
+    {
+        "Utterance Template": "utter_decline_reason_thank_you_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Thank you for sharing this useful information. Our agents will call you shortly for further assistance.",
+        "Tamil": "இந்த பயனுள்ள தகவலை பகிர்ந்தமைக்கு நன்றி. மேலும்  உதவிக்கு  எங்கள் முகவர்கள் உங்களை  விரைவில் அழைப்பார்கள்.",
+        "Kannada": "ಈ ಉಪಯುಕ್ತ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಂಡಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು. ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ ನಮ್ಮ ಏಜೆಂಟರು ಶೀಘ್ರದಲ್ಲೇ ನಿಮಗೆ ಕರೆ ಮಾಡುತ್ತಾರೆ.",
+        "Telugu": "ఈ ముఖ్యమైన సమాచారాన్ని పంచుకున్నందుకు కృతజ్ఞతలు. తదుపరి సహాయం కోసం మా ఏజెంట్లు త్వరలో మీకు కాల్ చేస్తారు",
+        "Hindi": "ये ज़रूरी इनफार्मेशन शेयर करने के लिए धन्यवाद। हमारे एजेंट्स थोड़ी देर मैं आपकी मदद करने के लिए आपको कॉल करेंगे।"
+    },
+    {
+        "Utterance Template": "utter_agent_will_connect_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Thank you for your time. Our agents will call you shortly.",
+        "Tamil": "உங்கள் நேரத்திற்கு நன்றி. எங்கள் முகவர்கள் உங்களை விரைவில்  அழைப்பார்கள்.",
+        "Kannada": "ನಿಮ್ಮ ಸಮಯಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು. ನಮ್ಮ ಏಜೆಂಟ್ ಶೀಘ್ರದಲ್ಲಿ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತಾರೆ .",
+        "Telugu": " మీ సమయానికి ధన్యవాదాలు. మా ఏజెంట్లు త్వరలో మీకు కాల్ చేస్తారు.",
+        "Hindi": "अपना समय देने के लिए धन्यवाद। हमारे एजेंट्स आपको जल्द ही कॉल करेंगे।"
+    },
+    {
+        "Utterance Template": "utter_bye_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Thank you for speaking to Avail Finance. Have a great day!",
+        "Tamil": "Avail Finance உடன் பேசியதற்கு நன்றி. இந்த நாள் இனிய நாளாக இருக்கட்டும்!",
+        "Kannada": "ಅವೈಲ್ ಫೈನಾನ್ಸ್ ನೊಂದಿಗೆ ಮಾತನಾಡಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು.  ಶುಭ ದಿನ",
+        "Telugu": "మీ విలువైన సమయాన్నిఅవైల ఫైనాన్స్  కి వెచ్చించినందుకు ధన్యవాదాలు, శుభదినం.",
+        "Hindi": "अवैल फाइनेंस से बात करने के लिए धन्यवाद। आपका दिन शुभ रहे।"
+    },
+    {
+        "Utterance Template": "utter_call_later_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Sorry to disturb you. I will call you later",
+        "Tamil": " சிரமத்திற்கு மன்னிக்கவும். நான் உங்களை பின்னர் அழைக்கிறேன்",
+        "Kannada": "ನಿಮಗೆ ತೊಂದರೆ ಆಗಿದ್ದಕ್ಕೆ ಕ್ಷಮಿಸಿ. ನಾನು ನಂತರ ನಿಮಗೆ ಕರೆ ಮಾಡುತ್ತೇನೆ",
+        "Telugu": "డిస్టర్బ్ చేసినందుకు నన్ను క్షమించండి. నేను మీకు తర్వాత కాల్ చేస్తాను.",
+        "Hindi": "आपको डिस्टर्ब करने के लिए सॉरी। मै आपको बाद मे कॉल करुँगी।"
+    },
+    {
+        "Utterance Template": "utter_general_queries_customer_care_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "For these queries, please contact our customer care number 8880428245.",
+        "Tamil": "இந்த மாதிரி கேள்விகளுக்கு, எங்கள் வாடிக்கையாளர் சேவை எண் 8880428245 தொடர்பு கொள்ளவும்.",
+        "Kannada": "ಈ ಪ್ರಶ್ನೆಗಳಿಗಾಗಿ, ದಯವಿಟ್ಟು ನಮ್ಮ ಕಸ್ಟಮರ್ ಕೇರ್ ಸಂಖ್ಯೆ 8880428245 ಸಂಪರ್ಕಿಸಿ.",
+        "Telugu": "ఇలాంటి ప్రశ్నలకు సంధానం కోసం మా కస్టమర్ కేర్ నెంబర్ ఐన 8880428245 కి కాల్ చేయండి.",
+        "Hindi": "इन प्रश्नो के लिए हमारे कस्टमर केयर नंबर 8880428245 पर कॉल करें।"
+    },
+    {
+        "Utterance Template": "utter_default_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Pardon. I could not understand you.",
+        "Tamil": "மன்னிக்கவும். நீங்கள் என்ன சொல்கிறீர்கள் என்று எனக்கு புரியவில்லை.",
+        "Kannada": "ಕ್ಷಮಿಸಿ . ನಿಮ್ಮ ಮಾತು  ನನಗೆ   ಅರ್ಥವಾಗಲಿಲ್ಲ , ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ತಿಳಿಸಿ.",
+        "Telugu": "క్షమించండి, నేను మీరు చెప్పింది అర్ధంచేసుకోలేకపోయాను.",
+        "Hindi": "सॉरी। मैं आपकी बात समझ नहीं पाई।"
+    },
+    {
+        "Utterance Template": "utter_human_handoff_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "You may call our customer care number 8880428245 on Monday to Saturday betweem 9 AM and 6 PM.",
+        "Tamil": "திங்கள் முதல் சனிக்கிழமை வரை காலை 9 மணி முதல் மாலை 6 மணி வரை எங்கள் வாடிக்கையாளர் சேவை எண்ணான 8880428245க்கு நீங்கள் அழைக்கலாம்.",
+        "Kannada": "ನೀವು ಸೋಮವಾರ ದಿಂದ ಶನಿವಾರದವರೆಗೆ  ಬೆಳಿಗ್ಗೆ 9 ರಿಂದ  ಸಂಜೆ 6 ರವರೆಗೆ ನಮ್ಮ ಕಸ್ಟಮರ್ ಕೇರ್ ಸಂಖ್ಯೆ 8880428245 ಗೆ ಕರೆ ಮಾಡಬಹುದು.",
+        "Telugu": "మీరు మా కస్టమర్ కేర్ నెంబర్ ఐన 8880428245  కి సోమవారం నుండి శనివారం వరకు ఉదయం 9  నుండి సాయంత్రం 6  వరకు కాల్ చేయొచ్చు.",
+        "Hindi": "आप हमारे कस्टमर केयर नंबर 8880428245 पर सोमवार से शनिवार सुबह नौ बजे से लेके शाम छै बजे तक कॉल कर सकते हैं।"
+    },
+    {
+        "Utterance Template": "utter_inform_past_payment_date_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Your payment date was {EMI_Date}",
+        "Tamil": "உங்கள் கட்டணத்தை  செலுத்த வேண்டிய  தேதி {EMI_Date}",
+        "Kannada": "ನಿಮ್ಮ ಪೇಮೆಂಟ್  ದಿನಾಂಕ {EMI_Date} ಆಗಿತ್ತು",
+        "Telugu": "మీ ఈఎంఐ తేదీ {EMI_Date}న వున్నది.",
+        "Hindi": "आपकी पेमेंट की तारीख़ है {EMI_Date}"
+    },
+    {
+        "Utterance Template": "utter_inform_upcoming_payment_date_30_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Your payment is due on the 30th of this month",
+        "Tamil": "உங்களின் நிலுவைக்  கட்டணம் இம்மாதம் 30ஆம் தேதிக்குள் செலுத்தப்பட வேண்டும் ",
+        "Kannada": "ನಿಮ್ಮ ಪೇಮೆಂಟ್ ಈ ತಿಂಗಳ 30 ರಂದು ಬಾಕಿ ಇದೆ",
+        "Telugu": "మీ బకాయి ఈ నెల ౩౦వ తేదీన వున్నది.",
+        "Hindi": "आपकी पेमेंट इस महीने की तीस तारीक को ड्यू है।"
+    },
+    {
+        "Utterance Template": "utter_inform_upcoming_payment_date_31_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Your payment is due on the 31st of this month",
+        "Tamil": "உங்களின் நிலுவைக் கட்டணம் இம்மாதம் 31ஆம் தேதிக்குள் செலுத்தப்பட வேண்டும்",
+        "Kannada": "ನಿಮ್ಮ ಪೇಮೆಂಟ್ ಈ ತಿಂಗಳ 31 ರಂದು ಬಾಕಿ ಇದೆ.",
+        "Telugu": "మీ బకాయి ఈ నెల ౩1వ తేదీన వున్నది.",
+        "Hindi": "आपकी पेमेंट इस महीने की इक्कतीस तारीक को ड्यू है।"
+    },
+    {
+        "Utterance Template": "utter_inform_outstanding_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Your due amount is Rs. {EMI_Amount}",
+        "Tamil": "உங்கள் நிலுவைத் தொகை ரூ. {EMI_Amount}",
+        "Kannada": "ನಿಮ್ಮ ಬಾಕಿ ಮೊತ್ತ {EMI_Amount}ರೂಪಾಯಿ ಆಗಿದೆ .",
+        "Telugu": "మీ ఈఎంఐ బకాయి మొత్తం {EMI_Amount} రూపాయలు వున్నది.",
+        "Hindi": "आपके अकाउंट पर {EMI_Amount} रूपये की पेमेंट पेंडिंग है। "
+    },
+    {
+        "Utterance Template": "utter_confirm_language_support_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Yes, I can speak in English",
+        "Tamil": "ஆம், என்னால் தமிழில் பேச முடியும் ",
+        "Kannada": "ಹೌದು, ನಾನು ಕನ್ನಡ ನಲ್ಲಿ ಮಾತನಾಡಬಹುದು.",
+        "Telugu": "అవును నేను తెలుగులో మాట్లాడగలను.",
+        "Hindi": "हाँ मै हिंदी में बात कर सकती हूँ।"
+    },
+    {
+        "Utterance Template": "utter_confirm_eng_hin_support_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "I can only speak in English, Hindi, Kannada, Tamil and Telugu at the moment.",
+        "Tamil": "என்னால் தற்போது ஆங்கிலம், இந்தி, கன்னடம், தமிழ், தெலுங்கு ஆகிய மொழிகளில் மட்டுமே பேச முடியும்.",
+        "Kannada": "ಸದ್ಯಕ್ಕೆ ನಾನು  ಇಂಗ್ಲಿಷ್, ಹಿಂದಿ, ಕನ್ನಡ, ತಮಿಳು, ಮತ್ತು ತೆಲುಗು ಭಾಷೆಯಲ್ಲಿ ಮಾತ್ರ ಮಾತನಾಡಬಹುದು .",
+        "Telugu": "నేను ప్రస్తుతానికి కేవలము ఇంగ్లీష్, హిందీ, కన్నడ, తమిళ్ మరియు తెలుగులో మాత్రమే మాట్లాడగలను.",
+        "Hindi": "इस समय मै सिर्फ इंग्लिश, हिंदी, कन्नड़ा, तमिल और तेलुगु मे ही बात कर सकती हूँ।"
+    },
+    {
+        "Utterance Template": "utter_apology_call_back_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Apologies, I can only speak in English, Hindi, Kannada, Tamil and Telugu at the moment. Our agents will get in touch with you. Have a nice day!",
+        "Tamil": "மன்னிக்கவும், என்னால் தற்போது ஆங்கிலம், இந்தி, கன்னடம், தமிழ் மற்றும் தெலுங்கு ஆகிய மொழிகளில் மட்டுமே பேச முடியும். எங்கள் முகவர்கள் உங்களைத் தொடர்புகொள்வார்கள்.இந்த நாள் இனிய நாளாக இருக்கட்டும்!",
+        "Kannada": "ಕ್ಷಮಿಸಿ, ನಾನು ಈ ಸಮಯದಲ್ಲಿ ಇಂಗ್ಲಿಷ್, ಹಿಂದಿ, ಕನ್ನಡ, ತಮಿಳು ಮತ್ತು ತೆಲುಗು ಭಾಷೆಯಲ್ಲಿ ಮಾತ್ರ ಮಾತನಾಡಬಹುದು . ನಮ್ಮ ಏಜೆಂಟ್ ಶೀಘ್ರದಲ್ಲಿ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತಾರೆ ..ಶುಭ ದಿನ",
+        "Telugu": "నన్ను క్షమించండి, నేను ప్రస్తుతానికి కేవలము ఇంగ్లీష్, హిందీ, కన్నడ, తమిళ్ మరియు తెలుగులో మాత్రమే మాట్లాడగలను. మా ఏజెంట్లు మీకు కాల్ చేస్తారు. శుభదినం.",
+        "Hindi": "सॉरी, इस समय मै सिर्फ इंग्लिश, हिंदी, कन्नड़ा, तमिल और तेलुगु मे ही बात कर सकती हूँ। हमारे एजेंट्स आपसे संपर्क करेंगे। आपका दिन शुभ रहे।"
+    },
+    {
+        "Utterance Template": "utter_language_preference_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Please tell me your language preference. I can only speak in English, Hindi, Kannada, Tamil and Telugu at the moment.",
+        "Tamil": "உங்கள் மொழி விருப்பத்தை சொல்லுங்கள். என்னால் தற்போது ஆங்கிலம், இந்தி, கன்னடம், தமிழ், தெலுங்கு ஆகிய மொழிகளில் மட்டுமே பேச முடியும்.",
+        "Kannada": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಭಾಷಾ ಆದ್ಯತೆಯನ್ನು ನನಗೆ ತಿಳಿಸಿ. ಸದ್ಯಕ್ಕೆ ನಾನು  ಇಂಗ್ಲಿಷ್, ಹಿಂದಿ, ಕನ್ನಡ, ತಮಿಳು ಮತ್ತು   ತೆಲುಗು ಭಾಷೆಯಲ್ಲಿ ಮಾತ್ರ ಮಾತನಾಡಬಹುದು.",
+        "Telugu": "మీకు ఏ బాషా కావాలో ఎంచుకోండి. నేను ప్రస్తుతానికి కేవలము ఇంగ్లీష్, హిందీ, కన్నడ, తమిళ్ మరియు తెలుగులో మాత్రమే మాట్లాడగలను.",
+        "Hindi": "प्लीज़ अपनी पसंद की भाषा चुने। इस समय मै सिर्फ इंग्लिश, हिंदी, कन्नड़ा, तमिल और तेलुगु मे ही बात कर सकती हूँ।"
+    },
+    {
+        "Utterance Template": "utter_ask_reason_1_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Can you please tell me the reason for this delay?",
+        "Tamil": "இந்த தாமதத்திற்கான காரணத்தை தயவுசெய்து சொல்ல முடியுமா?",
+        "Kannada": "ಈ ವಿಳಂಬಕ್ಕೆ ಕಾರಣವೇನೆಂದು   ದಯವಿಟ್ಟು ನನಗೆ ಹೇಳಬಹುದಾ ? ",
+        "Telugu": "మీరు దయచేసి ఈ ఆలస్యానికి కారణం ఏమిటో చెప్పండి?",
+        "Hindi": "क्या आप मुझे लेट पेमेंट करने का रीजन बता सकते हैं?"
+    },
+    {
+        "Utterance Template": "utter_ask_reason_2_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Can you please tell me briefy about the situation causing this delay.",
+        "Tamil": "இந்த தாமதத்திற்கு காரணமான சூழ்நிலையை சுருக்கமாக கூற முடியுமா?",
+        "Kannada": "ಈ ವಿಳಂಬಕ್ಕೆ ಕರಣವಾದ ಪರಿಸ್ಥಿತಿಯನ್ನು, ದಯವಿಟ್ಟು ಸಂಕ್ಷಿಪ್ತವಾಗಿ ತಿಳಿಸಿ ?",
+        "Telugu": "మీరు దయచేసి క్లుప్తంగా ఈ ఆలస్యం అవడానికి కారణాన్ని వివరించగలరా?",
+        "Hindi": "क्या आप मुझे संक्षेप मे अपनी सिचुएशन के बारे मे बता सकते हैं जिसकी वजह से आपको ये देरी हुई है।"
+    },
+    {
+        "Utterance Template": "utter_ask_reason_3_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Can you please elaborate on the reason?",
+        "Tamil": "இதற்கான காரணத்தை தயவு செய்து விளக்க முடியுமா?",
+        "Kannada": "ದಯವಿಟ್ಟು ನೀವು ಕಾರಣವನ್ನು ವಿವರಿಸಬಹುದಾ ?",
+        "Telugu": "మీ ఆలస్యానికి కారణాన్ని కొంచెం వివరంగా చెప్పండి?",
+        "Hindi": "क्या मैं जान सकती हूं पेमेंट में डिले का रीजन क्या है?"
+    },
+    {
+        "Utterance Template": "utter_ask_reason_4_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Can you share the reason for this delay?",
+        "Tamil": "இந்த தாமதத்திற்கான காரணத்தை பகிர்ந்து கொள்ள முடியுமா?",
+        "Kannada": "ನೀವು ಈ ವಿಳಂಬಕ್ಕೆ ಕಾರಣವನ್ನು  ಹಂಚಿಕೊಳ್ಳಬಹುದಾ ?",
+        "Telugu": "మీరు ఈ ఆలస్యానికి కారణం ఏమిటో చెప్పగలరా?",
+        "Hindi": "क्या आप मुझे पेमेंट मे देरी की वजह बता सकते हैं?"
+    },
+    {
+        "Utterance Template": "utter_repeat_ask_payment_1_common",
+        "Flow": "Post-Due",
+        "Tone": "Persuasive",
+        "English": "When will you clear yor dues?",
+        "Tamil": "உங்கள் நிலுவைத் தொகையை எப்போது செலுத்துவீர்கள்?",
+        "Kannada": "ನೀವು ಬಾಕಿಗಳನ್ನು ಯಾವಾಗ  ಕ್ಲಿಯರ್ ಮಾಡ್ತಿರಾ ?",
+        "Telugu": "మీరు మీ బకాయిలను ఎప్పుడు చెల్లిస్తారు?",
+        "Hindi": "आप कब तक अपने ड्यूज़ क्लियर करेंगे?"
+    },
+    {
+        "Utterance Template": "utter_repeat_ask_payment_2_common",
+        "Flow": "Post-Due",
+        "Tone": "Persuasive",
+        "English": "When will you clear your dues?",
+        "Tamil": "உங்கள் நிலுவைத் தொகையை எப்போது செலுத்துவீர்கள்?",
+        "Kannada": "ನೀವು ಬಾಕಿಗಳನ್ನು ಯಾವಾಗ  ಕ್ಲಿಯರ್ ಮಾಡ್ತಿರಾ ?",
+        "Telugu": "మీరు మీ బకాయిలను ఎప్పుడు చెల్లిస్తారు?",
+        "Hindi": "आप कब तक अपने ड्यूज़ क्लियर करेंगे?"
+    },
+    {
+        "Utterance Template": "utter_repeat_ask_payment_3_common",
+        "Flow": "Post-Due",
+        "Tone": "Persuasive",
+        "English": "Your payment is already late. Please tell me when will you clear your dues",
+        "Tamil": "உங்கள் கட்டணம் ஏற்கனவே தாமதமாகிவிட்டது. உங்கள் நிலுவைத் தொகையை எப்போது செலுத்துவீர்கள்  என்று சொல்லுங்கள்",
+        "Kannada": "ನಿಮ್ಮ ಪೇಮೆಂಟ್ ಈಗಾಗಲೇ ತಡವಾಗಿದೆ.ನೀವು ಬಾಕಿಯನ್ನು  ಯಾವಾಗ ಪೆ ಮಾಡುತ್ತಿರಿ  ಎಂದು ದಯವಿಟ್ಟು ತಿಳಿಸಿ",
+        "Telugu": "మీ చెల్లింపు ఇప్పటికే ఆలస్యం అయింది. మీ బకాయిలను ఎప్పుడు చెల్లిస్తారో చెప్పండి.",
+        "Hindi": "आपकी पेमेंट वैसे ही लेट हो चुकी है। प्लीज बताएं आप कब तक पेमेंट करेंगे?"
+    },
+    {
+        "Utterance Template": "utter_repeat_ask_payment_4_common",
+        "Flow": "Post-Due",
+        "Tone": "Persuasive",
+        "English": "Due date for your payment has passed. Please tell me when will you clear your dues",
+        "Tamil": "உங்கள் பணம் செலுத்துவதற்கான காலக்கெடு முடிந்துவிட்டது. உங்கள் நிலுவைத் தொகையை எப்போது கசெலுத்துவீர்கள் என்று சொல்லுங்கள்",
+        "Kannada": "ನಿಮ್ಮ ಪೇಮೆಂಟ್ನ  ನಿಗದಿತ ದಿನಾಂಕ ಕಳೆದಿದೆ. ನೀವು  ಬಾಕಿಯನ್ನು  ಯಾವಾಗ ಪೆ ಮಾಡುತ್ತಿರಿ ಎಂದು ದಯವಿಟ್ಟು  ತಿಳಿಸಿ.",
+        "Telugu": "మీ ఈఎంఐ బకాయి తేదీ అయిపోయింది. మీ బకాయిలను ఎప్పుడు చెల్లిస్తారో చెప్పండి.",
+        "Hindi": "आपकी ड्यू डेट निकल चुकी है। प्लीज बताएं आप कब तक पेमेंट करेंगे?"
+    },
+    {
+        "Utterance Template": "utter_default_1_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Pardon. I could not understand you.",
+        "Tamil": "மன்னிக்கவும். நீங்கள் என்ன சொல்கிறீர்கள் என்று எனக்கு புரியவில்லை.",
+        "Kannada": "ಕ್ಷಮಿಸಿ . ನಿಮ್ಮ ಮಾತು  ನನಗೆ   ಅರ್ಥವಾಗಲಿಲ್ಲ , ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ತಿಳಿಸಿ.",
+        "Telugu": "నన్ను క్షమించండి, నేను మీరు చెప్పింది అర్ధంచేసుకోలేకపోయాను.",
+        "Hindi": "सॉरी, मै आपको समझ नहीं पाई।"
+    },
+    {
+        "Utterance Template": "utter_default_2_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Sorry I could not understand you. ",
+        "Tamil": "மன்னிக்கவும். நீங்கள் என்ன சொல்கிறீர்கள் என்று எனக்கு புரியவில்லை.",
+        "Kannada": "ಕ್ಷಮಿಸಿ . ನಿಮ್ಮ ಮಾತು  ನನಗೆ  ಅರ್ಥವಾಗಲಿಲ್ಲ ",
+        "Telugu": "క్షమించండి, నేను మీరు చెప్పింది అర్ధంచేసుకోలేకపోయాను.",
+        "Hindi": "सॉरी, मै आपको समझ नहीं पाई।"
+    },
+    {
+        "Utterance Template": "utter_default_3_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Could you please repeat that?",
+        "Tamil": "தயவுசெய்து அதை மீண்டும் சொல்ல  முடியுமா?",
+        "Kannada": "ದಯವಿಟ್ಟು ಅದನ್ನು ಮತ್ತೊಮ್ಮೆ ತಿಳಿಸಬಹುದಾ ? ",
+        "Telugu": "దయచేసి మీరు మల్లి ఇంకోసారి  చెప్పగలరా?",
+        "Hindi": "क्या आप इसे फिर से रिपीट करें कर सकते हैं?"
+    },
+    {
+        "Utterance Template": "utter_default_4_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "I could not understand you. Could you please repeat the same?",
+        "Tamil": " நீங்கள் என்ன சொல்கிறீர்கள் என்று எனக்கு புரியவில்லை.தயவுசெய்து  மீண்டும் அதையே சொல்ல  முடியுமா?",
+        "Kannada": "ನನಗೆ ನಿಮ್ಮ ಮಾತು ಅರ್ಥವಾಗಲಿಲ್ಲ  . ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಹೇಳಬಹುದಾ ?",
+        "Telugu": "నేను మీరు చెప్పింది అర్ధంచేసుకోలేకపోయాను. దయచేసి మీరు మల్లి ఇంకోసారి  చెప్పగలరా?",
+        "Hindi": "सॉरी मैं आपको ठीक से सुन नहीं पा रही हूं। प्लीज रिपीट करें।"
+    },
+    {
+        "Utterance Template": "utter_default_5_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "Sorry, Can you repeat?",
+        "Tamil": "மன்னிக்கவும், மீண்டும் சொல்ல முடியுமா?",
+        "Kannada": "ಕ್ಷಮಿಸಿ, ನೀವು  ಮತ್ತೊಮ್ಮೆ   ಹೇಳಬಹುದಾ ?",
+        "Telugu": "క్షమించండి, మీరు మల్లి ఇంకోసారి  చెప్పగలరా?",
+        "Hindi": "सॉरी मैं समझ नहीं पाई। क्या आप फिर से रिपीट कर सकते हैं?"
+    },
+    {
+        "Utterance Template": "utter_default_6_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "There was a lot of background noice. Could you please repeat that?",
+        "Tamil": "பின்னணி இரைச்சல் அதிகமாக இருக்கிறது. தயவுசெய்து அதை மீண்டும் சொல்ல  முடியுமா?",
+        "Kannada": "ಬ್ಯಾಕ್ ಗ್ರೌಂಡ್ ನೋಯಿಸ್ ತುಂಬಾ ಇದೆ, ದಯವಿಟ್ಟು  ನೀವು ಮತ್ತೊಮ್ಮೆ  ಹೇಳಬಹುದೇ?",
+        "Telugu": "మీ చుట్టూ అలకిడి ఎక్కువగా వున్నది, దయచేసి మీరు మల్లి ఇంకోసారి  చెప్పగలరా?",
+        "Hindi": "आपके बैकग्राउंड से बहुत आवाज आ रही है। क्या आप फिर से रिपीट करें कर सकते हैं?"
+    },
+    {
+        "Utterance Template": "utter_apology_common",
+        "Flow": "",
+        "Tone": "",
+        "English": "Sorry for the inconvenience.",
+        "Tamil": "சிரமத்திற்கு மன்னிக்கவும்.",
+        "Kannada": "ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ.",
+        "Telugu": "అసౌకర్యానికి చింతిస్తున్నాము.",
+        "Hindi": "असुविधा के लिए हमें खेद है।"
+    },
+    {
+        "Utterance Template": "utter_audible_check_common",
+        "Flow": "Common",
+        "Tone": "Neutral",
+        "English": "am i audible to you?",
+        "Tamil": "நான் சொல்வது உங்களுக்கு கேட்கிறதா?",
+        "Kannada": "ನನ್ನ ಮಾತು ನಿಮಗೆ ಕೇಳಿಸುತ್ತಿದೆಯೇ",
+        "Telugu": "నెను చెప్పిన్ది విన్నారా ?",
+        "Hindi": "क्या आप मुझे सुन पा रहे हैं।"
+    },
+    {
+        "Utterance Template": "utter_user_said_thank_you_common",
+        "Flow": "",
+        "Tone": "",
+        "English": "I'm glad to help you.",
+        "Tamil": "உங்களுக்கு உதவ நான் மகிழ்ச்சியடைகிறேன்.",
+        "Kannada": "ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನನಗೆ ಖುಷಿ ಇದೆ.",
+        "Telugu": "",
+        "Hindi": "आपकी सहायता करके मुझे खुशी हुई।"
+    },
+    {
+        "Utterance Template": "utter_customer_informed_wait_common",
+        "Flow": "",
+        "Tone": "",
+        "English": "Sure, I am waiting",
+        "Tamil": "நிச்சயமாக, நான் காத்திருக்கிறேன்",
+        "Kannada": "ಖಂಡಿತ ನಾನು ಕಾಯ್ತಿದಿನಿ",
+        "Telugu": "ఖచ్చితంగా, నేను వెయిట్ చేస్తాను .",
+        "Hindi": "ज़रूर, मैं वेट कर रही हूँ।"
+    }
+]
