@@ -225,7 +225,7 @@ async def generate_response(nlg_call):
     #     return bot_responses
 
     # url = "http://20.127.208.146/core_english/webhooks/rest/webhook"
-    url = "http://localhost:8650/webhook"
+    url = "http://localhost:8650/webhooks/rest/webhook"
     # url = "http://adhar.saarthi.ai/aadhar_english_core/webhooks/rest/webhook"
 
     bot_response = await call_bot(url, sender_id, request_id, user_id, text)
