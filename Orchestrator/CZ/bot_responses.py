@@ -4,6 +4,7 @@ import time
 import datetime
 import redis
 import requests
+import os
 
 from orchestrator_check import store_call_bot_output
 
@@ -31,6 +32,11 @@ red_malayalam = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB_
 # red_marathi = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB_MARATHI, password=REDIS_PASSWORD)
 red = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, password=REDIS_PASSWORD,charset="utf-8", decode_responses=True)
 red_customers = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB_1, password=REDIS_PASSWORD,charset="utf-8", decode_responses=True)
+
+audio_url = os.environ.get('audio_url')
+if audio_url is None:
+    audio_url = "https://adhar.saarthi.ai/aadhar_tts"
+
 async def call_bot(url, sender_id, request_id, user_id, text):
     """Call to the bot Api"""
 
@@ -264,8 +270,8 @@ async def generate_response(nlg_call):
         else:
             item['force']=0
         item[
-            "voice_data"] = "https://adhar.saarthi.ai/aadhar_tts/wav?message={message}&template_name={template_name}&language=" \
-                            "{language}".format(message=message, template_name=template_name, language="english")
+            "voice_data"] = "{audio_url}/wav?message={message}&template_name={template_name}&language=" \
+                            "{language}".format(message=message, template_name=template_name, language="english",audio_url=audio_url)
         # item["voice_data"] = "https://navidockertest.blob.core.windows.net/availfinanceresponses/{}.wav".format(
         #     file_name)
         final_bot_responses.append(item)
@@ -430,8 +436,8 @@ async def generate_response_hindi(nlg_call):
         else:
             item['force']=0
         item[
-            "voice_data"] = "https://adhar.saarthi.ai/aadhar_tts/wav?message={message}&template_name={template_name}&language=" \
-                            "{language}".format(message=message, template_name=template_name, language="hindi")
+            "voice_data"] = "{audio_url}/wav?message={message}&template_name={template_name}&language=" \
+                            "{language}".format(message=message, template_name=template_name, language="hindi",audio_url=audio_url)
         # item["voice_data"] = "https://navidockertest.blob.core.windows.net/availfinanceresponses/{}.wav".format(
         #     file_name)
         final_bot_responses.append(item)
@@ -824,8 +830,8 @@ async def generate_response_tamil(nlg_call):
         file_name = str(hash_object.hexdigest())
         item['force']=1
         item[
-            "voice_data"] = "http://adhar.saarthi.ai/aadhar_tts/wav?message={message}&template_name={template_name}&language=" \
-                             "{language}".format(message=message, template_name=template_name, language="tamil")
+            "voice_data"] = "{audio_url}/wav?message={message}&template_name={template_name}&language=" \
+                             "{language}".format(message=message, template_name=template_name, language="tamil",audio_url=audio_url)
         final_bot_responses.append(item)
     bot_response["data"] = final_bot_responses
 
@@ -1283,8 +1289,8 @@ async def generate_response_malayalam(nlg_call):
         hash_object = hashlib.md5(message.encode('utf-8'))
         file_name = str(hash_object.hexdigest())
         item['force'] = 1
-        item["voice_data"] = "http://adhar.saarthi.ai/aadhar_tts/wav?message={message}&template_name={template_name}&language=" \
-                            "{language}".format(message=message, template_name=template_name, language="malayalam")
+        item["voice_data"] = "{audio_url}/wav?message={message}&template_name={template_name}&language=" \
+                            "{language}".format(message=message, template_name=template_name, language="malayalam",audio_url=audio_url)
         final_bot_responses.append(item)
     bot_response["data"] = final_bot_responses
 
